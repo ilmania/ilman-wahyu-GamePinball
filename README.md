@@ -1,2 +1,2 @@
-# ilman-wahyu-GamePinball
-tugas pinball part Ball, Paddle, Bumper
+# ilman-wahyu-agc
+buat tugas pelatihan game incubation
