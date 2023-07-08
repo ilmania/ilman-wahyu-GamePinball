@@ -38,6 +38,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PaddleControler.cs" />
      <Compile Include="Assets\Scripts\BumperControler.cs" />
+     <Compile Include="Assets\Scripts\SwitchControler.cs" />
+     <Compile Include="Assets\Scripts\BallControler.cs" />
+     <Compile Include="Assets\Scripts\LauncherControler.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
