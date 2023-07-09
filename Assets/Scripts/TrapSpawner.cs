@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinSpawner : MonoBehaviour
+public class TrapSpawner : MonoBehaviour
 {
-    public GameObject coin;
-    public float currentCoin, maxCoin, delayTime;
+    public GameObject trap;
+    public float currentTrap, maxTrap, delayTime;
     private Vector3 spawnPoint;
 
     void Start()
@@ -17,34 +17,34 @@ public class CoinSpawner : MonoBehaviour
     {
         while (true)
         {
-            if (currentCoin < maxCoin)
+            if (currentTrap < maxTrap)
             {
                 yield return new WaitForSecondsRealtime(delayTime);
-                CoinSpawn();
+                TrapSpawn();
             }
             yield return null;
         }
     }
 
-    public void CoinSpawn()
+    public void TrapSpawn()
     {
         float x = Random.Range(-6, 4);
         float y = Random.Range(-7, 8.5f);
-        Vector3 spawnPoint = new Vector3(x, 1.2f, y);
+        Vector3 spawnPoint = new Vector3(x, 0.5f, y);
 
         this.transform.position = spawnPoint;
 
-        CoinIncrease(1);
-        Instantiate(coin, spawnPoint, Quaternion.identity);
+        TrapIncrease(1);
+        Instantiate(trap, spawnPoint, Quaternion.identity);
     }
 
-    public void CoinIncrease(int number)
+    public void TrapIncrease(int number)
     {
-        currentCoin = currentCoin + number;
+        currentTrap = currentTrap + number;
     }
 
-    public void CoinDecrease(int number)
+    public void TrapDecrease(int number)
     {
-        currentCoin = currentCoin - number;
+        currentTrap = currentTrap - number;
     }
 }

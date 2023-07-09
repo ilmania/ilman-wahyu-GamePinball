@@ -44,6 +44,8 @@
      <Compile Include="Assets\Scripts\LauncherControler.cs" />
      <Compile Include="Assets\Scripts\LoseAreaControler.cs" />
      <Compile Include="Assets\Scripts\CoinControler.cs" />
+     <Compile Include="Assets\Scripts\TrapSpawner.cs" />
+     <Compile Include="Assets\Scripts\TrapControler.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -683,12 +685,6 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -707,9 +703,6 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -722,9 +715,6 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -734,8 +724,20 @@
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>D:\Berkas\Repo\ilman-wahyu-GamePinball\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
